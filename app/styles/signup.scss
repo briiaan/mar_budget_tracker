@@ -1,0 +1,56 @@
+@use "variables" as v;
+
+fieldset {
+  border: none;
+}
+
+::placeholder {
+  color: rgb(109, 109, 109);
+}
+
+.sign-up-page {
+  background: v.$branding_color;
+  display: grid;
+  place-content: center;
+  height: 100svh;
+  width: 100svw;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.have-an-account {
+  text-align: center;
+  color: white;
+}
+
+.sign-in {
+  color: #ffffff;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.field-names {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.button_2 {
+  background-color: v.$button_color_2;
+}
+.terms-policy {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 4.154;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

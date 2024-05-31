@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4868cb;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.settings-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.box-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.setting-item {
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.setting-item label {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.setting-item a {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #007bff;
+  text-decoration: none;
+}
+
+.setting-item a i {
+  margin-left: 5px;
+}
+
+.setting-item a:hover {
+  color: #0056b3;
+}
+
+.setting-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 1px;
+  background-color: #ccc;
+  bottom: -7px;
+  left: 20px;
+}

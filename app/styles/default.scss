@@ -1,0 +1,103 @@
+@use "variables" as v;
+@import url(https://fonts.bunny.net/css?family=josefin-sans:400,500,600,700|poppins:200,300,400,500,600,700,800,900);
+* {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.error {
+  outline-color: red;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.adjust_width_by_10 {
+  width: calc(100% - 20px) !important;
+}
+
+.error-log  {
+  text-align: center;
+  padding-top: 10px;
+}
+.container-message {
+  padding: 20px 10px 10px 20px;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 26.7px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+input {
+  width: calc(100% - 10px);
+  height: 42px;
+  border-radius: 30px;
+  background: #fafafa;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  padding-left: 10px;
+}
+
+
+.button-container {
+  width: 100%;
+  .button {
+    cursor: pointer;
+    width: inherit;
+    position: relative;
+    height: inherit;
+    padding: 10px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    box-shadow: 1px 2px rgb(45, 89, 211);
+    border-color: transparent;
+    color: white;
+    p {
+      color: white;
+    }
+  }
+}
+
+.color-1 {
+  background-color: v.$button_color_1;
+}
+
+.color-2 {
+  background-color: v.$button_color_2;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

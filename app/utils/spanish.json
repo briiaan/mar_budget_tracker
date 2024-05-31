@@ -1,0 +1,10 @@
+{
+  "homepage": {
+    "text": [
+      "Librate Finacialmente Hoy.",
+      "Ahorra mas y gasta con confianza con"
+    ],
+    "buttons": ["Iniciar Sesión", "Crea una Cuenta"]
+  },
+  "onboarding-1": {}
+}

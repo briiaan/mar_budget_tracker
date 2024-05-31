@@ -1,0 +1,88 @@
+@use "variables" as v;
+@import url(https://fonts.bunny.net/css?family=josefin-sans:400,500,600,700|poppins:200,300,400,500,600,700,800,900);
+
+
+#grid-container {
+    background-color: v.$branding_color;
+    display: grid;
+    place-content: center;
+    height: 100svh;
+}
+
+#inner-container {
+    max-width: 400px;
+    border-radius: 15px;
+    height: 650px;
+}
+
+#grid-container-transactions {
+    display: grid;
+    place-content: center;
+}
+
+#balance {
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    #balance-title {
+        color: rgb(68, 106, 175);
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+        font-size: 15px;
+        p {
+            padding-left: 5px;
+        }
+    }
+    #balance-value {
+        color: rgb(68, 106, 175);
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+        text-align: center;
+        font-size: 44px;
+    }
+}
+
+#latest-transactions {
+    background-color: white;
+    height: 260px;
+    margin-top: 10px;
+    border-radius: 10px;
+    p {
+        padding-left: 5px;
+        font-weight: 600;
+    }
+}
+#latest-deposits {
+    background-color: white;
+    height: 270px;
+    margin-top: 10px;
+    border-radius: 10px;
+    p {
+        padding-left: 5px;
+        font-weight: 600;
+    }
+}
+
+.transaction {
+    .transaction_group {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+        gap: 20px; /* Gap between the grid items */    }
+}
+
+.deposit {
+    .deposit_group {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+        gap: 20px; /* Gap between the grid items */    
+    }
+}
+
+#greeting {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+}
